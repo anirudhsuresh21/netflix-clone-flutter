@@ -64,7 +64,7 @@ class ApiServices{
     print(url);
     final response = await http.get(Uri.parse(url), headers: {
       'Authorization':
-          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YzJhODJiZDBmYjFiNWIzMmZhYWY5MGM5MzlmYjNmNSIsInN1YiI6IjY2M2E1NjllOTU5MGUzMDEyOWJlMzU0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RhE37VLoUR2W3i_CzRcGFNsXQ3b8naO1SI4DDP2zTlc'
+          'Bearer your_token'
     });
     log(response.statusCode.toString());
     if (response.statusCode == 200) {
